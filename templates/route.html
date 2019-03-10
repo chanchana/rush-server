@@ -1,0 +1,108 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+<!-- <div id="drawing"></div>
+
+<script>
+    var draw = SVG('drawing').size(300, 300)
+    var rect = draw.rect(100, 100).attr({ fill: '#fff' })
+</script> -->
+
+<canvas id="canvas" width="1000" height="500" style="border:1px solid #000000;"></canvas>
+<script>
+    var c = document.getElementById("canvas");
+    var ctx = c.getContext("2d");
+
+    // var image = new Image();
+    // image.src = "{{ url_for('static', filename='../static/data/sample/sample.gif') }}";
+
+    make_base();
+    function make_base()
+    {
+        base_image = new Image();
+        base_image.onload = function()
+        {
+            ctx.drawImage(base_image, 0, 0);
+            var path = JSON.parse('{{path|tojson}}')
+            var data = JSON.parse('{{data|tojson}}')
+            var point = JSON.parse('{{point|tojson}}')
+            var item = JSON.parse('{{item|tojson}}')
+            
+            var count = 0
+            
+            console.log(path)
+            
+            
+            for (i in data) {
+                console.log(i)
+                ctx.beginPath();
+                ctx.arc(point[i][0], point[i][1], 1, 0, 2 * Math.PI);
+                ctx.stroke()
+            }
+            
+            ctx.moveTo(point['START'][0], point['START'][1])
+            
+            for (i in path) {
+                
+                // LINE
+                ctx.lineTo(point[path[i]][0], point[path[i]][1])
+                ctx.stroke()
+                
+                // console.log(path[i]);
+                ctx.beginPath();
+                ctx.arc(point[path[i]][0], point[path[i]][1], 5, 0, 2 * Math.PI);
+                ctx.stroke()
+                
+                for (j in item) {
+                    if (item[j] == path[i]) {
+        
+                        ctx.beginPath();
+                        ctx.arc(point[path[i]][0], point[path[i]][1], 10, 0, 2 * Math.PI);
+                        ctx.stroke()
+        
+                        ctx.fillStyle = 'green'
+                        ctx.fill()
+                        
+                        ctx.font = "12px Arial";
+                        ctx.fillStyle = 'red'
+                        ctx.fillText(data[path[i]], point[path[i]][0], point[path[i]][1]);
+                        
+                        ctx.font = "12px Arial";
+                        ctx.fillStyle = 'red'
+                        ctx.fillText(count, point[path[i]][0], point[path[i]][1] - 12);
+                        count += 1
+                    }
+                }
+                
+                ctx.moveTo(point[path[i]][0], point[path[i]][1])
+            }
+        }
+        base_image.src = "{{ url_for('static', filename='../static/data/sample/sample.gif') }}";
+        
+    }
+
+    // ctx.drawImage(image,0,0);
+    // ctx.moveTo(0, 0);
+    // ctx.lineTo(200, 100);
+    // ctx.stroke();
+    
+    // ctx.beginPath();
+    // // x, y, radius, start, end
+    // ctx.arc(50, 50, 10, 0, 2 * Math.PI);
+    // ctx.stroke()
+    
+    // ctx.beginPath();
+    // // x, y, radius, start, end
+    // ctx.arc(450, 50, 10, 0, 2 * Math.PI);
+    // ctx.stroke()
+    </script>
+
+
+
+<br><br><br><br>
+<img id="map" src="{{ url_for('static', filename='../static/data/sample/sample.gif') }}">
+{{data}}
+{{path}}
+{{point}}
+{% endblock %}

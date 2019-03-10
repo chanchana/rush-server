@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div id="drawing"></div>
+
+
+<script src="{{ url_for('static', filename='node_modules/svg.js/dist/svg.min.js')}}"" ></script>
+
+<script>
+var draw = SVG('drawing').size(300, 300)
+var rect = draw.rect(100, 100).attr({ fill: '#f06' })
+</script>
+
+{{data}}
+{{path}}
+{{point}}
+{% endblock %}

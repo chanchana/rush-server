@@ -1,0 +1,1 @@
+print(open('/Users/Apple/Project/Rush/map/data/sample/sample.rm.json', 'r').read())

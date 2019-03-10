@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<form action="" method="POST">
+    {% for item in items %}
+        <input type="checkbox" name="items" value="{{item}}">{{items[item]}}<br>
+    {% endfor %}
+    <button type="submit">Get Route</button>
+</form>
+
+{% endblock %}

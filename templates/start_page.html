@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<form action="/demo" method="POST">
+    Select yout store
+    <select name="select">
+        {% for store in stores %}
+            <option value="{{store.group}};{{store.name}}">{{store.name}}</option>
+        {% endfor %}
+    </select>
+    <br>
+    <button type="submit">Start</button>
+</form>
+
+{% endblock %}
