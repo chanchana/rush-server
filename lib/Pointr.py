@@ -1,6 +1,6 @@
 
 import lib.Graphr as gr
-import tkinter as tk
+#import tkinter as tk
 import math
 
 
@@ -129,16 +129,16 @@ class Pointr(object):
 
     ##### GUI #####
 
-    def gui_init(self):
+    # def gui_init(self):
 
-        def close_win(event):
-            print("You hit return.")
+    #     def close_win(event):
+    #         print("You hit return.")
 
-        print('s')
-        self.root = tk.Tk()
-        self.root.bind('<Return>', close_win)
-        self.root.bind('a', close_win)
-        self.canvas = tk.Canvas(height=600, width=600)
+    #     print('s')
+    #     self.root = tk.Tk()
+    #     self.root.bind('<Return>', close_win)
+    #     self.root.bind('a', close_win)
+    #     self.canvas = tk.Canvas(height=600, width=600)
 
         # coord = 10, 50, 240, 210
         # arc = canvas.create_arc(coord, start=0, extent=300, fill="blue")
@@ -148,47 +148,47 @@ class Pointr(object):
         # self.create_pin(canvas, (10, 90), 'test')
         # self.create_pin(canvas, (150, 150), 'test')
 
-    def gui_create(self):
-        for p in self.points:
-            # print(p.position)
-            self.gui_point(p)
+    # def gui_create(self):
+    #     for p in self.points:
+    #         # print(p.position)
+    #         self.gui_point(p)
 
-        for e in self.edges:
-            self.gui_edge(e)
+    #     for e in self.edges:
+    #         self.gui_edge(e)
 
-        tk.Button(self.root, text="Quit", command=self.root.destroy).pack()
+    #     tk.Button(self.root, text="Quit", command=self.root.destroy).pack()
 
-    def gui_show(self):
+    # def gui_show(self):
 
-        self.canvas.pack()
-        self.root.mainloop()
+    #     self.canvas.pack()
+    #     self.root.mainloop()
 
-        print('t')
+    #     print('t')
 
-    def gui_point(self, point, color='red'):
-        self.create_pin(self.canvas, point.position, point.name, color)
+    # def gui_point(self, point, color='red'):
+    #     self.create_pin(self.canvas, point.position, point.name, color)
 
-    def gui_edge(self, edge, color='black'):
-        self.create_line(self.canvas, edge, color)
+    # def gui_edge(self, edge, color='black'):
+    #     self.create_line(self.canvas, edge, color)
 
-    def gui_edge_from_points(self, point1, point2, color='black'):
-        new_edge = Edge(point1, point2)
-        self.create_line(self.canvas, new_edge, color)
+    # def gui_edge_from_points(self, point1, point2, color='black'):
+    #     new_edge = Edge(point1, point2)
+    #     self.create_line(self.canvas, new_edge, color)
 
-    @staticmethod
-    def create_pin(canvas, position, name, color):
-        pin_size = 2
-        print('TEST')
-        print(position)
-        tx, ty, bx, by = float(position[0]) - pin_size, float(position[1]) - pin_size, float(position[0]) + pin_size, float(position[1]) + pin_size
-        canvas.create_oval(tx, ty, bx, by, fill=color)
-        canvas.create_text(position[0], position[1], text=name)
+    # @staticmethod
+    # def create_pin(canvas, position, name, color):
+    #     pin_size = 2
+    #     print('TEST')
+    #     print(position)
+    #     tx, ty, bx, by = float(position[0]) - pin_size, float(position[1]) - pin_size, float(position[0]) + pin_size, float(position[1]) + pin_size
+    #     canvas.create_oval(tx, ty, bx, by, fill=color)
+    #     canvas.create_text(position[0], position[1], text=name)
 
-    @staticmethod
-    def create_line(canvas, edge, color):
-        # pin_size = 5
-        x1, y1, x2, y2 = edge.point1.position[0], edge.point1.position[1], edge.point2.position[0], edge.point2.position[1]
-        canvas.create_line(x1, y1, x2, y2, fill=color)
+    # @staticmethod
+    # def create_line(canvas, edge, color):
+    #     # pin_size = 5
+    #     x1, y1, x2, y2 = edge.point1.position[0], edge.point1.position[1], edge.point2.position[0], edge.point2.position[1]
+    #     canvas.create_line(x1, y1, x2, y2, fill=color)
         # canvas.create_text(position[0], position[1], text=name)
         
 if __name__ == '__main__':
