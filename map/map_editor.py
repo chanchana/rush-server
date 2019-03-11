@@ -225,7 +225,7 @@ def cursor_click(event):
 def save(event=None):
     global filename
     with open(filename + '.rm.json', 'w') as f:
-        json.dump(data, f)
+        json.dump(data, f, indent=4)
         f.close()
 
     messagebox.showinfo('Done', 'It passed the progress that it saved, but I don\'t know if it success or not!')

@@ -1,0 +1,22 @@
+Store,ID,Name,Brand,Category,Node,Shelf,Size,Available,Clicked
+ALPHA0,A000,Biscuit,Wargon Wheel Jammie,Snack,N005,1,100 g,50,0
+ALPHA0,A001,Biscuit,Wargon Wheel Jammiesss,Snack,N006,2,100 g,50,0
+ALPHA0,A002,Chocolate,Kit Kat 1,Sweet,N007,1,100 g,50,0
+ALPHA0,A003,Chocolate,Kit Kat 2,Sweet,N007,2,100 g,50,0
+ALPHA0,A004,Chocolate,Kit Kat 3,Sweet,N008,3,100 g,50,0
+ALPHA0,A005,Chocolate,Kit Kat 4,Sweet,N009,3,100 g,50,0
+ALPHA0,A006,Canned Food,Pla Ka Pong 1,Food,N010,3,100 g,50,0
+ALPHA0,A007,Canned Food,Pla Ka Pong 2,Food,N011,3,100 g,50,0
+ALPHA0,A008,Canned Food,Pla Ka Pong 3,Food,N012,3,100 g,50,0
+ALPHA0,A009,Canned Food,Pla Ka Pong 4,Food,N013,3,100 g,50,0
+ALPHA0,A010,Pork,Moo Sod PC 1,Meat,N014,3,100 g,50,0
+ALPHA0,A011,Pork,Moo Sod PC 2,Meat,N015,3,100 g,50,0
+ALPHA0,A012,Pork,Moo Sod PC 3,Meat,N016,3,100 g,50,0
+ALPHA0,A013,Beef,Ya Ba,Meat,N017,3,100 g,50,0
+ALPHA0,A014,Salmon,Salmon is love,Meat,N018,3,100 g,50,0
+ALPHA0,A015,Salmon,Salmon is life,Meat,N019,3,100 g,50,0
+ALPHA0,A016,Milk,Nong Po,Daily,N020,3,100 g,50,0
+ALPHA0,A017,Milk,Nong Po po,Daily,N021,3,100 g,50,0
+ALPHA0,A018,Milk,Miji,Daily,N022,3,100 g,50,0
+ALPHA0,A019,Water,Cristal,Drink,N023,3,100 g,50,0
+ALPHA0,A020,Water,Sing,Drink,N024,3,100 g,50,0

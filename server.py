@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, render_template, request, redirect, send_from_directory
 from flask_cors import CORS
 from get_data import get_map_list, get_map_data, get_route, get_map_point
+import database as db
 
 app = Flask(__name__, static_url_path='')
 CORS(app)
@@ -20,8 +21,9 @@ def all_stores_str():
 
 @app.route('/stores/<string:group>/<string:name>')
 def get_store_data(group, name):
-    data = get_map_data(group, name)
-    return jsonify(data)
+    data = db.get_all()
+    category = db.get_category()
+    return jsonify({'data':data, 'category':category})
 
 @app.route('/stores/mappoint/<string:group>/<string:name>')
 def get_store_map_point(group, name):
@@ -30,16 +32,14 @@ def get_store_map_point(group, name):
 
 @app.route('/stores/mapimage/<string:group>/<string:name>')
 def get_store_map_image(group, name):
-    # with open(f'map/data/{group}/{name}.gif') as f:
-    #     print(f.read)
     return send_from_directory(f'map/data/{group}/', f'{name}.gif')
 
 @app.route('/stores/<string:group>/<string:name>/route/<string:items>')
 def fastest_route(group, name, items):
-    data = get_route(group, name, items)
+    order, data = get_route(group, name, items)
     if not data:
         return 'Item not in the list'
-    return jsonify({'path' : data})
+    return jsonify({'path' : data, 'order' : order})
 
 ##### DEMO #####
 

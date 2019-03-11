@@ -1,91 +1,106 @@
 import data_importer
 import itertools
 import lib.Pointr
+import database as db
+
 MAX = 999999999.9
 START_NAME = 'START'
-END_NAME = 'END'
+END_NAME = ['CASH1', 'CASH2', 'CASH3', 'CASH4', 'CASH5', 'CASH6'] 
 
-def get_travel(dvalue, pairs):
-    travel = []
-    for pair in pairs:
-        travel += dvalue[pair[0]][pair[1]][1]
-    return travel
-
-def make_pair(path):
-    pairs = []
+# make travel from path
+def travel(dvalue, path):
+    result = []
     for i in range(len(path) - 1):
-        pairs.append((path[i], path[i+1]))
-    return pairs
+        start = path[i]
+        end = path[i+1]
+        result += dvalue[start][end][1]
+    result += [path[-1]]
+    return result
 
-def cal_dist(dvalue, pairs):
-    dist = 0
-    for pair in pairs:
-        dist += dvalue[pair[0]][pair[1]][0]
-    return dist
+# find distance from nodes
+def distance(dvalue, path):
+    total = 0
+    for i in range(len(path) - 1):
+        start = path[i]
+        end = path[i+1]
+        total += dvalue[start][end][0]
+    return total
 
-def full_path(names):
-    return [START_NAME] + names + [END_NAME]
+# RUSH - Nearest Neighbor
+def nearest(dvalue, nodes):
+    path = [START_NAME]
+    free = nodes.copy()
 
-def make_travel(dvalue, path):
-    travel = []
-    pairs = make_pair(path)
-    for pair in pairs:
-        travel += dvalue[pair[0]][pair[1]][1]
-    return travel + [END_NAME]
+    while free:
+        start = path[-1]
+        min_distance = MAX
+        min_node = None
+        # find the nearest node
+        for node in free:
+            if dvalue[start][node][0] < min_distance:
+                min_distance = dvalue[start][node][0]
+                min_node = node
+        # append to path and remove from free
+        path += [min_node]
+        free.remove(min_node)
 
-def nearest(dvalue, names):
+    # find the nearest casheir
+    start = path[-1]
+    min_distance = MAX
+    min_node = None
+    for end in END_NAME:
+        if dvalue[start][end][0] < min_distance:
+            min_distance = dvalue[start][end][0]
+            min_node = end
+    path += [end]
 
-    def get_min(target):
-        minv = MAX
-        data = ''
-        for key in free:
-            if key != target and dvalue[target][key][0] < minv:
-                minv = dvalue[target][key][0]
-                data = key
-        return data
+    # end
+    trav = travel(dvalue, path)
+    return path, trav
+        
 
-    free = names.copy()
-    path = []
-    path.append(START_NAME)
-    while len(free) > 0:
-        found = get_min(path[-1])
-        path.append(found)
-        free.remove(found)
-
-    path.append(END_NAME)
-    return make_travel(dvalue, path)
-
-
-def rush_algorithm(dvalue, names):
-    print(names)
-    print(full_path(names))
-    min_value = MAX
+# RUSH - Permutation
+def permutation(dvalue, nodes):
+    min_distance = MAX
     min_path = None
-    min_travel = None
-    if len(names) <= 8:
-        permutations = itertools.permutations(names)
-        for p in permutations:
-            path = full_path(list(p))
-            # print(path)
-            pairs = make_pair(path)
-            # print(cal_dist(dvalue, pairs))
-            dist = cal_dist(dvalue, pairs)
-            if dist < min_value:
-                min_value = dist
+
+    # permutation
+    permutations = itertools.permutations(nodes)
+    for p in permutations:
+        for end in END_NAME:
+            path = [START_NAME] + list(p) + [end]
+            current_distance = distance(dvalue, path)
+            if current_distance < min_distance:
+                min_distance = current_distance
                 min_path = path
-        min_travel = make_travel(dvalue, min_path)
+
+    #end
+    trav = travel(dvalue, min_path)
+    return min_path, trav
+
+
+# RUSH Algorithm
+# output : 
+#    path : order of item
+#    trav : travel path through all nodes
+def rush_algorithm(dvalue, nodes):
+    print(nodes)
+    trav = None
+    path = None
+
+    # hybrid
+    if len(nodes) <= 8:
+        path, trav = permutation(dvalue, nodes)
     else:
-        min_travel = nearest(dvalue, names)
+        path, trav = nearest(dvalue, nodes)
 
-    # print(min_value)
-    # print(min_path)
-    # print(min_travel)
-    print(min_travel)
-    return min_travel
-
+    print(path)
+    print(trav)
+    return path, trav
 
 def update(group, name):
     ''' Update d_value of input map '''
+
     pr = data_importer.import_rm(group, name)
     pr.initialize_graph()
     d_value = pr.graph.d_value()
@@ -93,7 +108,10 @@ def update(group, name):
     print('d_value updated')
     return d_value
 
+# get route from node name 
 def get(group, name, item_list):
+    ''' get route from node name '''
+
     dvalue = data_importer.get_d_value(group, name)
     if dvalue == None:
         dvalue = update(group, name)
@@ -102,11 +120,13 @@ def get(group, name, item_list):
             return None
     return rush_algorithm(dvalue, item_list)
 
-if __name__ == '__main__':
-    # update()
-    # get('sample', 'sample', ['1', '4', '12', '14', '106', '100'])
-    # get('sample', 'sample', ['1', '2', '3', '4', '5', '6', '7', '8', '9'])
-    # get('sample', 'sample', ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'])
-    # print(get('sample', 'sample', ['1', '4', '12', '1444', '105556', '100']))
-    # get('sample', 'sample', ['1', '12', '14', '106'])
-    update('KMUTT', 'KMUTT Book Store')
+# get route from id list 
+def get_from_id(group, name, item_id_list):
+    ''' get route from item id list '''
+
+    nodes = []
+    for item in item_id_list:
+        node = db.get_node_from_id(item)
+        nodes.append(node)
+    nodes = list(set(nodes))
+    get(group, name, nodes)
