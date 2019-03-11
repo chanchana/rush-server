@@ -20,7 +20,7 @@ def import_from(filename):
 # get all items
 def get_all(mapid='ALPHA'):
     items = item_tb.find({})
-    return items
+    return list(items)
 
 
 # get all category from map
