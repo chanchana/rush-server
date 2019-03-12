@@ -86,6 +86,6 @@ def demo_route(group, name, items):
     item = items.split(';') + ['START', 'END']
     return render_template('map.html', path=path, data=data, point=point, item=item)
 
-app.run(host='178.128.24.70', port=8000)
+app.run(host='0.0.0.0', port=8000)
 
 
