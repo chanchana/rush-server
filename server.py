@@ -80,12 +80,13 @@ def demo_select(group, name):
 
 @app.route('/demo/map/<string:group>/<string:name>/route/<string:items>')
 def demo_route(group, name, items):
-    path = get_route(group, name, items)
-    data = get_map_data(group, name)
-    point = get_map_point(group, name)
-    item = items.split(';') + ['START', 'END']
-    return render_template('map.html', path=path, data=data, point=point, item=item)
+    # path = get_route(group, name, items)
+    # data = get_map_data(group, name)
+    # point = get_map_point(group, name)
+    # item = items.split(';') + ['START', 'END']
+    # return render_template('map.html', path=path, data=data, point=point, item=item)
+    return ' '
 
-app.run(host='0.0.0.0', port=8000)
+app.run(host='178.128.24.70', port=8000)
 
 
