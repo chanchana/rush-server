@@ -19,7 +19,12 @@ def import_from(filename):
 
 # get all items
 def get_all(mapid='ALPHA'):
-    items = item_tb.find({})
+    items = item_tb.find({}, {'_id': 0})
+    return list(items)
+
+# get all items
+def get_all_from_category(category, mapid='ALPHA'):
+    items = item_tb.find({'Category':category}, {'_id': 0})
     return list(items)
 
 
@@ -31,10 +36,10 @@ def get_category(mapid='ALPHA'):
         categories.append(item['Category'])
     categories = list(set(categories))
     print(categories)
-
+    return categories
 
 # get item node
-def get_from_id(item_id, mapid='ALPHA'):
+def get_from_id(item_id, mapid='ALPHA0'):
     ''' get item node name '''
 
     item = item_tb.find_one({'Store':mapid, 'ID':item_id})
@@ -42,12 +47,12 @@ def get_from_id(item_id, mapid='ALPHA'):
     return item
 
 # get item information
-def get_node_from_id(item_id,  mapid='ALPHA'):
+def get_node_from_id(item_id,  mapid='ALPHA0'):
     ''' get item row in database '''
 
     item = item_tb.find_one({'Store':mapid, 'ID':item_id})
-    # print(item['Node'])
-    return item['Node']
+    if item : print(item['Node'])
+    return item['Node'] if item else None
 
 # show all item in database
 def show_all():

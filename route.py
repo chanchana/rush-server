@@ -52,7 +52,7 @@ def nearest(dvalue, nodes):
         if dvalue[start][end][0] < min_distance:
             min_distance = dvalue[start][end][0]
             min_node = end
-    path += [end]
+    path += [min_node]
 
     # end
     trav = travel(dvalue, path)
@@ -127,6 +127,7 @@ def get_from_id(group, name, item_id_list):
     nodes = []
     for item in item_id_list:
         node = db.get_node_from_id(item)
-        nodes.append(node)
+        if node:
+            nodes.append(node)
     nodes = list(set(nodes))
-    get(group, name, nodes)
+    return get(group, name, nodes)

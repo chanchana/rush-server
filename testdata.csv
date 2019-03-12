@@ -1,22 +1,233 @@
 Store,ID,Name,Brand,Category,Node,Shelf,Size,Available,Clicked
-ALPHA0,A000,Biscuit,Wargon Wheel Jammie,Snack,N005,1,100 g,50,0
-ALPHA0,A001,Biscuit,Wargon Wheel Jammiesss,Snack,N006,2,100 g,50,0
-ALPHA0,A002,Chocolate,Kit Kat 1,Sweet,N007,1,100 g,50,0
-ALPHA0,A003,Chocolate,Kit Kat 2,Sweet,N007,2,100 g,50,0
-ALPHA0,A004,Chocolate,Kit Kat 3,Sweet,N008,3,100 g,50,0
-ALPHA0,A005,Chocolate,Kit Kat 4,Sweet,N009,3,100 g,50,0
-ALPHA0,A006,Canned Food,Pla Ka Pong 1,Food,N010,3,100 g,50,0
-ALPHA0,A007,Canned Food,Pla Ka Pong 2,Food,N011,3,100 g,50,0
-ALPHA0,A008,Canned Food,Pla Ka Pong 3,Food,N012,3,100 g,50,0
-ALPHA0,A009,Canned Food,Pla Ka Pong 4,Food,N013,3,100 g,50,0
-ALPHA0,A010,Pork,Moo Sod PC 1,Meat,N014,3,100 g,50,0
-ALPHA0,A011,Pork,Moo Sod PC 2,Meat,N015,3,100 g,50,0
-ALPHA0,A012,Pork,Moo Sod PC 3,Meat,N016,3,100 g,50,0
-ALPHA0,A013,Beef,Ya Ba,Meat,N017,3,100 g,50,0
-ALPHA0,A014,Salmon,Salmon is love,Meat,N018,3,100 g,50,0
-ALPHA0,A015,Salmon,Salmon is life,Meat,N019,3,100 g,50,0
-ALPHA0,A016,Milk,Nong Po,Daily,N020,3,100 g,50,0
-ALPHA0,A017,Milk,Nong Po po,Daily,N021,3,100 g,50,0
-ALPHA0,A018,Milk,Miji,Daily,N022,3,100 g,50,0
-ALPHA0,A019,Water,Cristal,Drink,N023,3,100 g,50,0
-ALPHA0,A020,Water,Sing,Drink,N024,3,100 g,50,0
+ALPHA0,A000,White Wine,VINI Chardonnay 2017,Wine,N128,"1,2",750ml,50,13
+ALPHA0,A001,White Wine,VINI Sauvignon Blanc 2016,Wine,N128,3,750ml,50,16
+ALPHA0,A002,White Wine,VINI Pinot Grigio 2017,Wine,N127,1,750ml,50,14
+ALPHA0,A003,White Wine,Quantum Traminer 2015,Wine,N127,2,750ml,50,24
+ALPHA0,A004,White Wine,Domaine Boyar Traminer 2016,Wine,N127,3,750ml,50,73
+ALPHA0,A005,White Wine,Domaine Boyar Muscat 2015,Wine,N126,1,750ml,50,33
+ALPHA0,A006,White Wine,Domaine Boyar Chardonnay 2016,Wine,N126,2,750ml,50,90
+ALPHA0,A007,Red Wine,Eolis Merlot& Franc 2009,Wine,N125,1,750ml,50,97
+ALPHA0,A008,Red Wine,Seven Gens Sauvignon 2012,Wine,N125,2,750ml,50,18
+ALPHA0,A009,Red Wine,Minkov Bros Sauvignon 2016,Wine,N125,3,750ml,50,73
+ALPHA0,A010,Red Wine,Gorchivka Sauvignon 2014,Wine,N124,"1,2,3",750ml,50,55
+ALPHA0,A011,Red Wine,Midalidare PetitVerdot 2015,Wine,N123,1,750ml,50,49
+ALPHA0,A012,Red Wine,Quantum Sauvignon 2015,Wine,N123,2,750ml,50,67
+ALPHA0,A013,Red Wine,Villa Yustina Rouge 2015,Wine,N123,3,750ml,50,4
+ALPHA0,A014,Red Wine,VINI Carbernet Sauvignon 2016,Wine,N122,"1,2",750ml,50,35
+ALPHA0,A015,Red Wine,Vintage Cabernet Franc 2013,Wine,N122,3,750ml,50,83
+ALPHA0,A016,Red Wine,Midalidare Merlot & Franc 2015,Wine,N121,1,750ml,50,96
+ALPHA0,A017,Red Wine,Chateau Burgozone Franc 2011,Wine,N121,2,750ml,50,27
+ALPHA0,A018,Red Wine,Eolis Cabernet Franc 2011,Wine,N121,3,750ml,50,40
+ALPHA0,A019,Red Wine,Plaisir Divin Franc 2013,Wine,N120,"1,2",750ml,50,40
+ALPHA0,A020,Red Wine,Legio I Merlot & Franc 2014,Wine,N120,3,750ml,50,70
+ALPHA0,A021,Red Wine,Chateau Pinot Noir 2012,Wine,N119,"1,2",750ml,50,17
+ALPHA0,A022,Red Wine,Quantum Pinot Noir 2014,Wine,N119,3,750ml,50,97
+ALPHA0,A023,Red Wine,VINI Pinot Noir 2015,Wine,N118,"1,2,3",750ml,50,10
+ALPHA0,A024,Red Wine,Rossidi Rubin 2013,Wine,N117,1,750ml,50,58
+ALPHA0,A025,Red Wine,Enira 2010,Wine,N116,1,750ml,50,49
+ALPHA0,A026,Red Wine,Minkov Brothers Syrah 2014,Wine,N116,"2,3",750ml,50,71
+ALPHA0,A027,Red Wine,Rossidi Syrah 2013,Wine,N115,1,750ml,50,83
+ALPHA0,A028,Red Wine,Encore Syrah 2015,Wine,N115,2,750ml,50,56
+ALPHA0,A029,Red Wine,Petite Enira 2011,Wine,N114,1,750ml,50,13
+ALPHA0,A030,Red Wine,Carpe Diem Red Blend 2015,Wine,N114,3,750ml,50,95
+ALPHA0,A031,Red Wine,2016 Villa Yambol Mavrud,Wine,N113,2,750ml,50,62
+ALPHA0,A032,Red Wine,Orbelnus Melnik 2013,Wine,N113,3,750ml,50,62
+ALPHA0,A033,Soft Drink,Pepsi,Beverages,N112,1,355ml,50,81
+ALPHA0,A034,Soft Drink,Pepsi Zero Sugar,Beverages,N112,2,355ml,50,40
+ALPHA0,A035,Soft Drink,Pepsi Wild Cherry,Beverages,N112,3,355ml,50,8
+ALPHA0,A036,Soft Drink,Diet Pepsi,Beverages,N111,1,355ml,50,10
+ALPHA0,A037,Soft Drink,Pepsi cherry vanilla,Beverages,N111,2,355ml,50,81
+ALPHA0,A038,Soft Drink,Pepsi Caffeine Free,Beverages,N111,3,355ml,50,77
+ALPHA0,A039,Soft Drink,Coca-Cola Original,Beverages,N110,1,450ml,50,67
+ALPHA0,A040,Soft Drink,Coca-Cola No Sugar,Beverages,N110,2,450ml,50,88
+ALPHA0,A041,Soft Drink,Coca-Cola Light,Beverages,N110,3,450ml,50,91
+ALPHA0,A042,Soft Drink,Coca-Cola Plus Coffee,Beverages,N109,1,450ml,50,72
+ALPHA0,A043,Soft Drink,Fanta Original,Beverages,N109,2,450ml,50,100
+ALPHA0,A044,Soft Drink,Fanta Strawberry,Beverages,N109,3,450ml,50,2
+ALPHA0,A045,Soft Drink,Fanta Fruit Punch,Beverages,N108,1,450ml,50,50
+ALPHA0,A046,Soft Drink,Sprite,Beverages,N107,1,450ml,50,16
+ALPHA0,A047,Soft Drink,Schweppes Manao Soda,Beverages,N106,1,330ml,50,11
+ALPHA0,A048,Soft Drink,Schweppes Plus C,Beverages,N106,2,330ml,50,48
+ALPHA0,A049,Soft Drink,Schweppes Dry Ginger Ale,Beverages,N106,3,330ml,50,61
+ALPHA0,A050,Soft Drink,Schweppes Soda Water,Beverages,N105,1,330ml,50,64
+ALPHA0,A051,Soft Drink,Schweppes Tonic Water,Beverages,N105,2,330ml,50,82
+ALPHA0,A052,Soft Drink,A&W Root Beer,Beverages,N105,3,330ml,50,17
+ALPHA0,A053,Juice,Minute Maid Pulpy Orange,Beverages,N104,1,290ml,50,32
+ALPHA0,A054,Juice,Minute Maid Pulpy Mandarin,Beverages,N104,2,290ml,50,31
+ALPHA0,A055,Juice,Minute Maid Pulpy Red Grape,Beverages,N104,3,290ml,50,18
+ALPHA0,A056,Juice,Minute Maid Pulpy White Grape,Beverages,N103,1,290ml,50,98
+ALPHA0,A057,Juice,Minute Maid Splash,Beverages,N103,2,290ml,50,15
+ALPHA0,A058,Juice,ZICO coconut water,Beverages,N103,3,250ml,50,17
+ALPHA0,A059,Juice,TIPCO 100% Kiwi,Beverages,N102,1,500ml,50,16
+ALPHA0,A060,Juice,TIPCO 100% Pomegranate,Beverages,N102,2,500ml,50,55
+ALPHA0,A061,Juice,TIPCO 100% Blueberry,Beverages,N102,3,500ml,50,24
+ALPHA0,A062,Juice,TIPCO 100% Guava,Beverages,N101,1,500ml,50,55
+ALPHA0,A063,Juice,TIPCO 100% Prune,Beverages,N101,2,500ml,50,57
+ALPHA0,A064,Juice,TIPCO 100% Mamgosteen,Beverages,N101,3,500ml,50,22
+ALPHA0,A065,Juice,TIPCO 100% Pineapple,Beverages,N100,1,500ml,50,85
+ALPHA0,A066,Juice,TIPCO 100% Grape,Beverages,N100,"2,3",500ml,50,92
+ALPHA0,A067,Juice,TIPCO 100% Cherry Berry,Beverages,N099,1,500ml,50,94
+ALPHA0,A068,Juice,TIPCO 100% Apple,Beverages,N099,2,500ml,50,35
+ALPHA0,A069,Juice,TIPCO 100% Orange,Beverages,N099,3,500ml,50,71
+ALPHA0,A070,Juice,TIPCO Apple Cider,Beverages,N098,1,500ml,50,92
+ALPHA0,A071,Water,Aura Mineral Water,Beverages,N098,2,500ml,50,47
+ALPHA0,A072,Water,Nestle Water,Beverages,N098,3,500ml,50,41
+ALPHA0,A073,Water,Evian Natural Spring Water,Beverages,N097,1,500ml,50,71
+ALPHA0,A074,Water,Crystal Drinking Water,Beverages,N097,2,500ml,50,80
+ALPHA0,A075,Water,Singha Water,Beverages,N097,3,500ml,50,32
+ALPHA0,A076,Toilet Paper,SCOTT Toilet Paper 1-Ply 300's,Paper&Cleaning,N096,1,2 packs,50,10
+ALPHA0,A077,Toilet Paper,SCOTT Toilet Paper 2-Ply 150's,Paper&Cleaning,N096,2,2 packs,50,37
+ALPHA0,A078,Toilet Paper,Cellox Purify Super Extra,Paper&Cleaning,N095,1,6 packs,50,4
+ALPHA0,A079,Toilet Paper,Cellox Purify Super Extra,Paper&Cleaning,N094,1,6 packs,50,46
+ALPHA0,A080,Toilet Paper,Cellox Purify Ultra Soft,Paper&Cleaning,N093,1,6 packs,50,90
+ALPHA0,A081,Toilet Paper,Zilk Kotton by Cellox,Paper&Cleaning,N092,1,6 packs,50,27
+ALPHA0,A082,Tissue Paper,Cellox Purify Flower,Paper&Cleaning,N091,1,3 packs,50,89
+ALPHA0,A083,Tissue Paper,Cellox Purify Sweet Fancy,Paper&Cleaning,N091,2,3 packs,50,65
+ALPHA0,A084,Tissue Paper,Cellox Purify Décor,Paper&Cleaning,N090,1,3 packs,50,50
+ALPHA0,A085,Tissue Paper,Cellox Purify Rosy,Paper&Cleaning,N090,2,3 packs,50,40
+ALPHA0,A086,Tissue Paper,Cellox Purify LINE FRIENDS,Paper&Cleaning,N089,1,3 packs,50,83
+ALPHA0,A087,Tissue Paper,Kleenex trusted care tissues,Paper&Cleaning,N088,1,1 pack,50,31
+ALPHA0,A088,Tissue Paper,Kleenex ultra soft tissues,Paper&Cleaning,N088,2,1 pack,50,0
+ALPHA0,A089,Tissue Paper,Kleenex soothing lotion,Paper&Cleaning,N087,1,1 pack,50,75
+ALPHA0,A090,Tissue Paper,Kleenex anti-viral tissues,Paper&Cleaning,N087,2,1 pack,50,83
+ALPHA0,A091,Tissue Paper,Kleenex cool touch tissues,Paper&Cleaning,N086,1,1 pack,50,1
+ALPHA0,A092,Tissue Paper,Kleenex multicare,Paper&Cleaning,N086,2,1 pack,50,66
+ALPHA0,A093,Tissue Paper,Cellox Purify Soft Pack,Paper&Cleaning,N085,1,3 packs,50,85
+ALPHA0,A094,Tissue Paper,Cellox Purify Pop Up,Paper&Cleaning,N085,2,3 packs,50,25
+ALPHA0,A095,Wet Wipe,Cellox Anti-bac Wet Wipes,Paper&Cleaning,N085,3,1 pack,50,35
+ALPHA0,A096,Wet Wipe,Cellox Pure Water Wet Wipes,Paper&Cleaning,N084,1,1 pack,50,89
+ALPHA0,A097,Wet Wipe,Cellox Toilet Wipes,Paper&Cleaning,N084,2,1 pack,50,100
+ALPHA0,A098,Wet Wipe,SCOTT Flushable Wipes,Paper&Cleaning,N083,1,1 pack,50,78
+ALPHA0,A099,Wet Wipe,Kleenex clean wipes-flip top,Paper&Cleaning,N083,2,1 pack,50,1
+ALPHA0,A100,Wet Wipe,Kleenex germ wipes-flip top,Paper&Cleaning,N082,1,1 pack,50,61
+ALPHA0,A101,Wet Wipe,Kleenex sensitive Wipes-flip top,Paper&Cleaning,N082,2,1 pack,50,52
+ALPHA0,A102,Wet Wipe,Kleenex clean wipes-singles,Paper&Cleaning,N081,1,1 pack,50,41
+ALPHA0,A103,Wet Wipe,Kleenex germ wipes-singles,Paper&Cleaning,N081,2,1 pack,50,96
+ALPHA0,A104,Frozen Food,AA Cheese Ball,Frozen Food,N080,1,500g,50,5
+ALPHA0,A105,Frozen Food,CPFM mince shrimp wonton,Frozen Food,N080,2,135g,50,54
+ALPHA0,A106,Frozen Food,Jade dragon barbecued pork bun,Frozen Food,N080,3,37g,50,43
+ALPHA0,A107,Frozen Food,CP Pork Gyoza,Frozen Food,N079,1,90g,50,62
+ALPHA0,A108,Frozen Food,Jade dragon shrimp hakao,Frozen Food,N079,2,18g,50,36
+ALPHA0,A109,Frozen Food,CP Delight Tender Chicken Breast,Frozen Food,N078,1,380g,50,26
+ALPHA0,A110,Frozen Food,CP Spagetti cabonara sauce,Frozen Food,N078,2,220g,50,90
+ALPHA0,A111,Frozen Food,Sunnyday french fries straight,Frozen Food,N077,1,1kg,50,5
+ALPHA0,A112,Frozen Food,CPFM Longan in syrup,Frozen Food,N077,3,170g,50,68
+ALPHA0,A113,Frozen Food,Chicken wing stick orleans,Frozen Food,N076,1,200g,50,88
+ALPHA0,A114,Frozen Food,Surapon Karake Chicken(Original),Frozen Food,N076,2,1kg,50,51
+ALPHA0,A115,Frozen Food,CP french fries shoestring,Frozen Food,N075,1,1kg,50,79
+ALPHA0,A116,Frozen Food,CP Shrimp wonton w/tomyum,Frozen Food,N075,2,115g,50,25
+ALPHA0,A117,Frozen Food,Chicken middle wing orleans,Frozen Food,N074,1,500g,50,12
+ALPHA0,A118,Frozen Food,PFP Hoy jor,Frozen Food,N074,2,500g,50,99
+ALPHA0,A119,Frozen Food,CP Pork congee,Frozen Food,N073,1,330g,50,49
+ALPHA0,A120,Frozen Food,CP wonton pork w/seafood,Frozen Food,N073,2,85g,50,99
+ALPHA0,A121,Frozen Food,CPFM santul in syrup,Frozen Food,N072,1,170g,50,86
+ALPHA0,A122,Frozen Food,Surapon food bbq bun,Frozen Food,N071,1,180g,50,42
+ALPHA0,A123,Frozen Food,CPFM crinkle cut french fries ,Frozen Food,N070,2,500g,50,97
+ALPHA0,A124,Frozen Food,Noodle soup with shrimp,Frozen Food,N069,1,216g,50,74
+ALPHA0,A125,Frozen Food,Jade dragon shrimp siu mai,Frozen Food,N068,3,16g,50,17
+ALPHA0,A126,Frozen Food,Superfun french fries shoestring,Frozen Food,N067,2,1kg,50,84
+ALPHA0,A127,Frozen Food,AA shrimp cake,Frozen Food,N066,1,150g,50,6
+ALPHA0,A128,Frozen Food,Grilled duck with rice,Frozen Food,N065,1,320g,50,65
+ALPHA0,A129,Frozen Food,Stir fried pork with rice,Frozen Food,N064,3,200g,50,88
+ALPHA0,A130,Frozen Food,Super Chef Chicken Roll,Frozen Food,N063,1,1kg,50,97
+ALPHA0,A131,Frozen Food,CP Boneless soya pork knuckle,Frozen Food,N062,3,350g,50,50
+ALPHA0,A132,Frozen Food,CP Seaweed chicken roll,Frozen Food,N061,2,200g,50,65
+ALPHA0,A133,Frozen Food,Jade dragon orange buns,Frozen Food,N060,1,300g,50,4
+ALPHA0,A134,Frozen Food,PFP fish chip,Frozen Food,N059,1,300g,50,53
+ALPHA0,A135,Frozen Food,CP Chicken nugget classic,Frozen Food,N058,2,1kg,50,86
+ALPHA0,A136,Frozen Food,CP Roasted teriyaki chicken,Frozen Food,N057,1,200g,50,27
+ALPHA0,A137,Frozen Food,American Style Straight Cut,Frozen Food,N056,2,750g,50,22
+ALPHA0,A138,Frozen Food,CP Crispy chicken,Frozen Food,N055,3,500g,50,99
+ALPHA0,A139,Frozen Food,CP Crispy pork,Frozen Food,N055,1,400g,50,48
+ALPHA0,A140,Frozen Food,S&P Macaroni & cheese,Frozen Food,N054,2,280g,50,11
+ALPHA0,A141,Frozen Food,Thairich lychee ice,Frozen Food,N053,1,170g,50,64
+ALPHA0,A142,Frozen Food,Alfredo cheese stick,Frozen Food,N052,1,130g,50,100
+ALPHA0,A143,Frozen Food,CP Chicken spagetti sauce,Frozen Food,N051,3,250g,50,39
+ALPHA0,A144,Frozen Food,Oishi trendy takoyaki,Frozen Food,N051,1,130g,50,24
+ALPHA0,A145,Frozen Food,S&P taro pearl with coconut,Frozen Food,N050,2,160g,50,27
+ALPHA0,A146,Frozen Food,S&P Butter Cake,Frozen Food,N050,3,300g,50,38
+ALPHA0,A147,Frozen Food,Thairich coconut ice,Frozen Food,N049,1,170g,50,71
+ALPHA0,A148,Chips,Lay's classic chips,Snacks,N048,1,255g,50,67
+ALPHA0,A149,Chips,Lay's Ketchup chips,Snacks,N048,2,255g,50,92
+ALPHA0,A150,Chips,Lay's Sour Cream & Onion chips,Snacks,N048,3,255g,50,84
+ALPHA0,A151,Chips,Lay's Nori seaweed chips,Snacks,N047,1,255g,50,14
+ALPHA0,A152,Chips,KARAMUCHO hot chili flavor,Snacks,N046,1,60g,50,88
+ALPHA0,A153,Chips,KARAMUCHO Sticks,Snacks,N045,3,60g,50,58
+ALPHA0,A154,Chocolate,Toblerone milk chocolate,Snacks,N044,1,50g,50,14
+ALPHA0,A155,Chocolate,Toblerone fruit & nut,Snacks,N043,1,100g,50,2
+ALPHA0,A156,Chocolate,Toblerone dark,Snacks,N042,3,100g,50,88
+ALPHA0,A157,Chocolate,Toblerone white chocolate,Snacks,N041,1,100g,50,80
+ALPHA0,A158,Chocolate,Ferrero Rocher,Snacks,N040,2,250g,50,4
+ALPHA0,A159,Snack,Taro Fish Snack Spicy,Snacks,N039,1,300g,50,92
+ALPHA0,A160,Snack,Taro Fish Snack Original,Snacks,N038,3,300g,50,41
+ALPHA0,A161,Snack,Taro Fish Snack Korean Seaweed,Snacks,N037,2,300g,50,96
+ALPHA0,A162,Snack,Taro Fish Snack Hot Chilli,Snacks,N036,1,300g,50,91
+ALPHA0,A163,Snack,Taro Fish Snack Barbecue,Snacks,N035,3,300g,50,32
+ALPHA0,A164,Snack,Taro cheese coated original,Snacks,N034,2,300g,50,74
+ALPHA0,A165,Snack,Taro cheese coated bbq chilli,Snacks,N033,1,300g,50,31
+ALPHA0,A166,Canned Fish,Canned Mackerel tomato sauce,Canned Foods,N032,3,155g,50,83
+ALPHA0,A167,Canned Fish,Big Mackerel,Canned Foods,N031,2,220g,50,27
+ALPHA0,A168,Canned Fish,Fried Mackerel with chilli sauce,Canned Foods,N030,1,140g,50,69
+ALPHA0,A169,Canned Fish,Canned Tuna Chuck in brine,Canned Foods,N029,3,185g,50,71
+ALPHA0,A170,Canned Fish,Canned Tuna Chuck in Veggy Oil,Canned Foods,N028,3,185g,50,92
+ALPHA0,A171,Canned Fruit,Canned Longan in syrup,Canned Foods,N027,3,234g,50,68
+ALPHA0,A172,Canned Fruit,Canned lychee in syrup,Canned Foods,N026,1,565g,50,21
+ALPHA0,A173,Canned Fruit,Canned rambutan in syrup,Canned Foods,N025,2,234g,50,28
+ALPHA0,A174,Canned Fruit,Canned Ginkgo in syrup,Canned Foods,N024,1,234g,50,76
+ALPHA0,A175,Canned Fruit,Canned toddy palm in syrup,Canned Foods,N023,3,234g,50,47
+ALPHA0,A176,Canned Fruit,Canned jackfruit in syrup,Canned Foods,N022,3,234g,50,63
+ALPHA0,A177,Canned Fruit,Canned banana in syrup,Canned Foods,N021,2,234g,50,12
+ALPHA0,A178,Canned Vegetable,Canned bean sprout in water,Canned Foods,N020,1,234g,50,90
+ALPHA0,A179,Canned Vegetable,Canned bamboo tip in water,Canned Foods,N019,2,234g,50,61
+ALPHA0,A180,Canned Vegetable,Canned bamboo slice in water,Canned Foods,N018,3,234g,50,82
+ALPHA0,A181,Canned Vegetable,Canned bamboo strip in water,Canned Foods,N017,1,234g,50,30
+ALPHA0,A182,Eggs,CP Egg#1,Baking,N016,1,30,50,38
+ALPHA0,A183,Eggs,CP Egg#0,Baking,N015,2,30,50,40
+ALPHA0,A184,Eggs,CP Egg#2,Baking,N014,1,30,50,5
+ALPHA0,A185,Eggs,CP Egg#3,Baking,N013,3,30,50,31
+ALPHA0,A186,Eggs,CP Egg Omega,Baking,N012,2,12,50,3
+ALPHA0,A187,Eggs,Freshmart egg size L,Baking,N011,2,10,50,5
+ALPHA0,A188,Eggs,Freshmart egg size M,Baking,N010,1,10,50,46
+ALPHA0,A189,Eggs,CP Egg #4,Baking,N009,3,30,50,51
+ALPHA0,A190,Flour,Knorr Corn Flour,Baking,N008,1,200g,50,24
+ALPHA0,A191,Flour,McGarrett Baking Powder,Baking,N007,2,300g,50,24
+ALPHA0,A192,Flour,Organic Buckwheat Flour,Baking,N006,2,500g,50,70
+ALPHA0,A193,Flour,Wholegrain Oat Flour,Baking,N005,3,500g,50,48
+ALPHA0,A194,Flour,Flour Bread,Baking,N004,1,500g,50,98
+ALPHA0,A195,Flour,Flour Kite,Baking,N003,2,500g,50,25
+ALPHA0,A196,Flour,Royal Fan Flour Cake,Baking,N002,3,500g,50,91
+ALPHA0,A197,Flour,All purpose flour,Baking,N001,1,500g,50,75
+ALPHA0,A198,Pork,TMF Pork Mince,Produce,N129,2,250g,50,64
+ALPHA0,A199,Pork,TMF Pork Sparerib,Produce,N130,1,250g,50,3
+ALPHA0,A200,Pork,CP Brand Pork Lion,Produce,N131,3,1kg,50,45
+ALPHA0,A201,Pork,CP Brand Pork Meatball,Produce,N132,2,500g,50,4
+ALPHA0,A202,Pork,CP Brand Pork Collar Sliced,Produce,N133,1,500g,50,80
+ALPHA0,A203,Pork,Burcher Toast Bacon,Produce,N134,1,100g,50,20
+ALPHA0,A204,Pork,Burcher Bratwurst Sausage,Produce,N135,1,100g,50,28
+ALPHA0,A205,Pork,TMF Pork Ham,Produce,N136,1,250g,50,98
+ALPHA0,A206,Chicken,CP Brand Chicken Middle wing,Produce,N137,1,300g,50,53
+ALPHA0,A207,Chicken,CP Brand Chicken Boneless Breast,Produce,N138,1,300g,50,8
+ALPHA0,A208,Chicken,CP Brand Chicken Thigh,Produce,N139,1,315g,50,48
+ALPHA0,A209,Chicken,Chicken Mixed Giblet,Produce,N140,1,1kg,50,0
+ALPHA0,A210,Chicken,U Farm Chicken Inner Fillet,Produce,N141,1,260g,50,72
+ALPHA0,A211,Meat,Beef Steak,Produce,N142,1,200g,50,90
+ALPHA0,A212,Meat,Rib Eye Steak,Produce,N143,1,200g,50,82
+ALPHA0,A213,Meat,Sliced Bottom Round Beef,Produce,N144,1,180g,50,88
+ALPHA0,A214,Meat,Beef Burger,Produce,N145,1,100g,50,29
+ALPHA0,A215,Meat,Beef Sirloin Steak,Produce,N146,1,200g,50,29
+ALPHA0,A216,Medicine,Carbon,Pharmacy,N147,2,1 pack,50,17
+ALPHA0,A217,Medicine,Cool fever,Pharmacy,N148,2,1 pack,50,84
+ALPHA0,A218,Milk,Milk,Dairy,N149,1,500g,50,22
+ALPHA0,A219,Butter,Butter,Dairy,N150,1,300g,50,72
+ALPHA0,A220,Cake,Vanilla cake,Bakery,N151,1,500g,50,13
+ALPHA0,A221,Bread,Chocolate bread,Bakery,N152,2,150g,50,64
+ALPHA0,A222,Donut,Donut Original,Bakery,N153,3,150g,50,59
+ALPHA0,A223,Sausage,Cocktail Sausage,Deli,N154,1,300g,50,30
+ALPHA0,A224,Sausage,Cheese Sausage,Deli,N155,3,300g,50,100
+ALPHA0,A225,Sausage,Chilli Sausage,Deli,N156,2,300g,50,61
+ALPHA0,A226,Magazines,Women Magazines,Magazines,N157,1,50pages,50,17
+ALPHA0,A227,Magazines,Lifestyle Magazines,Magazines,N157,2,50pages,50,92
+ALPHA0,A228,Magazines,Fashion Magazines,Magazines,N157,3,50pages,50,44
+ALPHA0,A229,Magazines,Health Magazines,Magazines,N159,1,50pages,50,88
+ALPHA0,A230,Magazines,Kids Magazines,Magazines,N159,2,50pages,50,10
+ALPHA0,A231,Magazines,Pets Megazines,Magazines,N159,3,50pages,50,90

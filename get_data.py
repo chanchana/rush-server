@@ -56,8 +56,16 @@ def get_map_point(group_name, map_name):
 
 def get_route(group_name, map_name, item_string):
     items = item_string.split(SPLITTER)
-    path = route.get(group_name, map_name, items)
-    return path
+    return route.get(group_name, map_name, items)
+
+def get_route_from_id(group_name, map_name, item_id_string):
+    print(item_id_string)
+    item_id_string = item_id_string.strip()
+    if item_id_string[0] == ';':
+        item_id_string = item_id_string[1:]
+    print(item_id_string)
+    items = item_id_string.split(SPLITTER)
+    return route.get_from_id(group_name, map_name, items)
 
 if __name__ == '__main__':
     get_map_list() 
